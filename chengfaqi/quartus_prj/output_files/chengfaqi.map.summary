@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Dec 01 16:38:51 2022
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
+Revision Name : chengfaqi
+Top-level Entity Name : chengfaqi
+Family : Cyclone IV E
+Total logic elements : 134
+    Total combinational functions : 134
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 32
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

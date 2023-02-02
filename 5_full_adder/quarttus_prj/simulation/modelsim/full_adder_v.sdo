@@ -1,0 +1,186 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP4CE10F17C8 Package FBGA256
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP4CE10F17C8,
+// with speed grade 8, core voltage 1.2V, and temperature 85 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "full_adder")
+  (DATE "11/22/2022 08:22:52")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ns)
+
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE sum_aoutput_I_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (0.849:0.849:0.849) (0.784:0.784:0.784))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sum_aoutput)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (3.158:3.158:3.158) (3.135:3.135:3.135))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE count_aoutput_I_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (0.88:0.88:0.88) (0.821:0.821:0.821))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE count_aoutput)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (3.058:3.058:3.058) (3.019:3.019:3.019))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE in_1_ainput)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.754:0.754:0.754) (0.801:0.801:0.801))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE in_2_ainput)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.776:0.776:0.776) (0.822:0.822:0.822))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE cin_ainput)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (0.744:0.744:0.744) (0.791:0.791:0.791))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE half_adder_inst1_aAdd0_a0_DATAA_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.422:3.422:3.422) (3.638:3.638:3.638))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE half_adder_inst1_aAdd0_a0_DATAC_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.413:3.413:3.413) (3.62:3.62:3.62))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE half_adder_inst1_aAdd0_a0_DATAD_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.294:3.294:3.294) (3.528:3.528:3.528))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE half_adder_inst1_aAdd0_a0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH dataa combout (0.471:0.471:0.471) (0.481:0.481:0.481))
+        (IOPATH datac combout (0.327:0.327:0.327) (0.316:0.316:0.316))
+        (IOPATH datad combout (0.177:0.177:0.177) (0.155:0.155:0.155))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE count_a0_DATAA_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.424:3.424:3.424) (3.64:3.64:3.64))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE count_a0_DATAC_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.413:3.413:3.413) (3.621:3.621:3.621))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_routing_wire")
+    (INSTANCE count_a0_DATAD_routing_wire_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain dataout (3.293:3.293:3.293) (3.526:3.526:3.526))
+      )
+      (PATHPULSE datain dataout (0.35:0.35:0.35))
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_lcell_comb")
+    (INSTANCE count_a0)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH dataa combout (0.453:0.453:0.453) (0.446:0.446:0.446))
+        (IOPATH datac combout (0.327:0.327:0.327) (0.316:0.316:0.316))
+        (IOPATH datad combout (0.177:0.177:0.177) (0.155:0.155:0.155))
+      )
+    )
+  )
+)

@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/FPGA_text/18_pll/quartus_prj/simulation/modelsim
+T_opt
+Z1 !s110 1675141499
+V_Z`El>fjXOQfaY5@7LBMb1
+04 6 4 work tb_pll fast 0
+=1-f80dac57e236-63d8a17b-2be-15b4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;10.5;63
+vpll
+!s110 1675141498
+!i10b 1
+!s100 8`IWB<giJoi[o0ZokWacm0
+In=4[SY:kIA_m;iK[;]XNA2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1675141460
+8D:/FPGA/FPGA_text/18_pll/rtl/pll.v
+FD:/FPGA/FPGA_text/18_pll/rtl/pll.v
+L0 1
+Z4 OL;L;10.5;63
+r1
+!s85 0
+31
+!s108 1675141498.000000
+!s107 D:/FPGA/FPGA_text/18_pll/rtl/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/FPGA_text/18_pll/rtl|D:/FPGA/FPGA_text/18_pll/rtl/pll.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/FPGA/FPGA_text/18_pll/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vpll_ip
+R1
+!i10b 1
+!s100 9BS;=nd1_k4AzkJg61[Y;3
+IN7^UKj;Jz^BAbBTfE;<o?1
+R3
+R0
+w1675138650
+8D:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip/pll_ip.v
+FD:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip/pll_ip.v
+L0 39
+R4
+r1
+!s85 0
+31
+Z6 !s108 1675141499.000000
+!s107 D:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip/pll_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip|D:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip/pll_ip.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/ip_core/pll_ip -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vpll_ip_altpll
+R1
+!i10b 1
+!s100 AQ4fO_NfRSPi;H2;[4=[Z0
+I9`1ifS_BPjF3j6=b=3DYk2
+R3
+R0
+w1675139485
+8D:/FPGA/FPGA_text/18_pll/quartus_prj/db/pll_ip_altpll.v
+FD:/FPGA/FPGA_text/18_pll/quartus_prj/db/pll_ip_altpll.v
+L0 29
+R4
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA/FPGA_text/18_pll/quartus_prj/db/pll_ip_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/db|D:/FPGA/FPGA_text/18_pll/quartus_prj/db/pll_ip_altpll.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtb_pll
+R1
+!i10b 1
+!s100 >`P1RfY2Yb>7=0g;e?Q^V1
+I@4NO]ADmZ2nAOgOR`Q`gj1
+R3
+R0
+w1675140888
+8D:/FPGA/FPGA_text/18_pll/quartus_prj/../sim/tb_pll.v
+FD:/FPGA/FPGA_text/18_pll/quartus_prj/../sim/tb_pll.v
+L0 2
+R4
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA/FPGA_text/18_pll/quartus_prj/../sim/tb_pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/../sim|D:/FPGA/FPGA_text/18_pll/quartus_prj/../sim/tb_pll.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/FPGA/FPGA_text/18_pll/quartus_prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

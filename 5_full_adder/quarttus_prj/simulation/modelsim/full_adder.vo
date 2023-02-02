@@ -1,0 +1,224 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "11/22/2022 08:22:51"
+
+// 
+// Device: Altera EP4CE10F17C8 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ns/ 1 ps
+
+module full_adder (
+	in_1,
+	in_2,
+	cin,
+	sum,
+	count);
+input 	in_1;
+input 	in_2;
+input 	cin;
+output 	sum;
+output 	count;
+
+// Design Ports Information
+// sum	=>  Location: PIN_P2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// count	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// cin	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in_1	=>  Location: PIN_T3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in_2	=>  Location: PIN_R1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("full_adder_v.sdo");
+// synopsys translate_on
+
+wire sum_aoutput_o;
+wire count_aoutput_o;
+wire in_1_ainput_o;
+wire in_2_ainput_o;
+wire cin_ainput_o;
+wire half_adder_inst1_aAdd0_a0_combout;
+wire count_a0_combout;
+
+wire sum_aoutput_I_driver;
+wire count_aoutput_I_driver;
+wire in_1_ainput_I_driver;
+wire in_2_ainput_I_driver;
+wire cin_ainput_I_driver;
+wire half_adder_inst1_aAdd0_a0_DATAA_driver;
+wire half_adder_inst1_aAdd0_a0_DATAC_driver;
+wire half_adder_inst1_aAdd0_a0_DATAD_driver;
+wire count_a0_DATAA_driver;
+wire count_a0_DATAC_driver;
+wire count_a0_DATAD_driver;
+
+cycloneive_routing_wire sum_aoutput_I_routing_wire_inst (
+	.datain(half_adder_inst1_aAdd0_a0_combout),
+	.dataout(sum_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y4_N16
+cycloneive_io_obuf sum_aoutput(
+	.i(sum_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(sum_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam sum_aoutput.bus_hold = "false";
+defparam sum_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire count_aoutput_I_routing_wire_inst (
+	.datain(count_a0_combout),
+	.dataout(count_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y6_N23
+cycloneive_io_obuf count_aoutput(
+	.i(count_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(count_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam count_aoutput.bus_hold = "false";
+defparam count_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire in_1_ainput_I_routing_wire_inst (
+	.datain(in_1),
+	.dataout(in_1_ainput_I_driver));
+
+// Location: IOIBUF_X1_Y0_N1
+cycloneive_io_ibuf in_1_ainput(
+	.i(in_1_ainput_I_driver),
+	.ibar(gnd),
+	.o(in_1_ainput_o));
+// synopsys translate_off
+defparam in_1_ainput.bus_hold = "false";
+defparam in_1_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire in_2_ainput_I_routing_wire_inst (
+	.datain(in_2),
+	.dataout(in_2_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y5_N22
+cycloneive_io_ibuf in_2_ainput(
+	.i(in_2_ainput_I_driver),
+	.ibar(gnd),
+	.o(in_2_ainput_o));
+// synopsys translate_off
+defparam in_2_ainput.bus_hold = "false";
+defparam in_2_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire cin_ainput_I_routing_wire_inst (
+	.datain(cin),
+	.dataout(cin_ainput_I_driver));
+
+// Location: IOIBUF_X1_Y0_N8
+cycloneive_io_ibuf cin_ainput(
+	.i(cin_ainput_I_driver),
+	.ibar(gnd),
+	.o(cin_ainput_o));
+// synopsys translate_off
+defparam cin_ainput.bus_hold = "false";
+defparam cin_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire half_adder_inst1_aAdd0_a0_DATAA_routing_wire_inst (
+	.datain(in_1_ainput_o),
+	.dataout(half_adder_inst1_aAdd0_a0_DATAA_driver));
+
+cycloneive_routing_wire half_adder_inst1_aAdd0_a0_DATAC_routing_wire_inst (
+	.datain(in_2_ainput_o),
+	.dataout(half_adder_inst1_aAdd0_a0_DATAC_driver));
+
+cycloneive_routing_wire half_adder_inst1_aAdd0_a0_DATAD_routing_wire_inst (
+	.datain(cin_ainput_o),
+	.dataout(half_adder_inst1_aAdd0_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y2_N16
+cycloneive_lcell_comb half_adder_inst1_aAdd0_a0(
+// Equation(s):
+// half_adder_inst1_aAdd0_a0_combout = in_1_ainput_o $ (in_2_ainput_o $ (cin_ainput_o))
+
+	.dataa(half_adder_inst1_aAdd0_a0_DATAA_driver),
+	.datab(gnd),
+	.datac(half_adder_inst1_aAdd0_a0_DATAC_driver),
+	.datad(half_adder_inst1_aAdd0_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(half_adder_inst1_aAdd0_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam half_adder_inst1_aAdd0_a0.lut_mask = 16'hA55A;
+defparam half_adder_inst1_aAdd0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire count_a0_DATAA_routing_wire_inst (
+	.datain(in_1_ainput_o),
+	.dataout(count_a0_DATAA_driver));
+
+cycloneive_routing_wire count_a0_DATAC_routing_wire_inst (
+	.datain(in_2_ainput_o),
+	.dataout(count_a0_DATAC_driver));
+
+cycloneive_routing_wire count_a0_DATAD_routing_wire_inst (
+	.datain(cin_ainput_o),
+	.dataout(count_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y2_N10
+cycloneive_lcell_comb count_a0(
+// Equation(s):
+// count_a0_combout = (in_1_ainput_o & ((in_2_ainput_o) # (cin_ainput_o))) # (!in_1_ainput_o & (in_2_ainput_o & cin_ainput_o))
+
+	.dataa(count_a0_DATAA_driver),
+	.datab(gnd),
+	.datac(count_a0_DATAC_driver),
+	.datad(count_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(count_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam count_a0.lut_mask = 16'hFAA0;
+defparam count_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign sum = sum_aoutput_o;
+
+assign count = count_aoutput_o;
+
+endmodule

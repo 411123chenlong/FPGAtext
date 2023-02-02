@@ -1,0 +1,357 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "11/22/2022 08:36:17"
+
+// 
+// Device: Altera EP4CE10F17C8 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module multiply (
+	in1,
+	in2,
+	ji);
+input 	[1:0] in1;
+input 	[1:0] in2;
+output 	[3:0] ji;
+
+// Design Ports Information
+// ji[0]	=>  Location: PIN_N1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ji[1]	=>  Location: PIN_R1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ji[2]	=>  Location: PIN_D9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ji[3]	=>  Location: PIN_T4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in1[0]	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in2[0]	=>  Location: PIN_R3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in1[1]	=>  Location: PIN_K1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in2[1]	=>  Location: PIN_N2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("multiply_8_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire ji_a0_a_aoutput_o;
+wire ji_a1_a_aoutput_o;
+wire ji_a2_a_aoutput_o;
+wire ji_a3_a_aoutput_o;
+wire in1_a0_a_ainput_o;
+wire in2_a0_a_ainput_o;
+wire Mult0_amult_core_aresult_a0_a_a0_combout;
+wire in1_a1_a_ainput_o;
+wire in2_a1_a_ainput_o;
+wire Mult0_amult_core_aresult_a1_a_a1_combout;
+wire Mult0_amult_core_aresult_a2_a_a2_combout;
+wire Mult0_amult_core_aresult_a3_a_a3_combout;
+
+wire ji_a0_a_aoutput_I_driver;
+wire ji_a1_a_aoutput_I_driver;
+wire ji_a2_a_aoutput_I_driver;
+wire ji_a3_a_aoutput_I_driver;
+wire in1_a0_a_ainput_I_driver;
+wire in2_a0_a_ainput_I_driver;
+wire Mult0_amult_core_aresult_a0_a_a0_DATAB_driver;
+wire Mult0_amult_core_aresult_a0_a_a0_DATAD_driver;
+wire in1_a1_a_ainput_I_driver;
+wire in2_a1_a_ainput_I_driver;
+wire Mult0_amult_core_aresult_a1_a_a1_DATAA_driver;
+wire Mult0_amult_core_aresult_a1_a_a1_DATAB_driver;
+wire Mult0_amult_core_aresult_a1_a_a1_DATAC_driver;
+wire Mult0_amult_core_aresult_a1_a_a1_DATAD_driver;
+wire Mult0_amult_core_aresult_a2_a_a2_DATAA_driver;
+wire Mult0_amult_core_aresult_a2_a_a2_DATAB_driver;
+wire Mult0_amult_core_aresult_a2_a_a2_DATAC_driver;
+wire Mult0_amult_core_aresult_a2_a_a2_DATAD_driver;
+wire Mult0_amult_core_aresult_a3_a_a3_DATAA_driver;
+wire Mult0_amult_core_aresult_a3_a_a3_DATAB_driver;
+wire Mult0_amult_core_aresult_a3_a_a3_DATAC_driver;
+wire Mult0_amult_core_aresult_a3_a_a3_DATAD_driver;
+
+cycloneive_routing_wire ji_a0_a_aoutput_I_routing_wire_inst (
+	.datain(Mult0_amult_core_aresult_a0_a_a0_combout),
+	.dataout(ji_a0_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y7_N23
+cycloneive_io_obuf ji_a0_a_aoutput(
+	.i(ji_a0_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ji_a0_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam ji_a0_a_aoutput.bus_hold = "false";
+defparam ji_a0_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire ji_a1_a_aoutput_I_routing_wire_inst (
+	.datain(Mult0_amult_core_aresult_a1_a_a1_combout),
+	.dataout(ji_a1_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y5_N23
+cycloneive_io_obuf ji_a1_a_aoutput(
+	.i(ji_a1_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ji_a1_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam ji_a1_a_aoutput.bus_hold = "false";
+defparam ji_a1_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire ji_a2_a_aoutput_I_routing_wire_inst (
+	.datain(Mult0_amult_core_aresult_a2_a_a2_combout),
+	.dataout(ji_a2_a_aoutput_I_driver));
+
+// Location: IOOBUF_X18_Y24_N16
+cycloneive_io_obuf ji_a2_a_aoutput(
+	.i(ji_a2_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ji_a2_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam ji_a2_a_aoutput.bus_hold = "false";
+defparam ji_a2_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire ji_a3_a_aoutput_I_routing_wire_inst (
+	.datain(Mult0_amult_core_aresult_a3_a_a3_combout),
+	.dataout(ji_a3_a_aoutput_I_driver));
+
+// Location: IOOBUF_X5_Y0_N16
+cycloneive_io_obuf ji_a3_a_aoutput(
+	.i(ji_a3_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ji_a3_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam ji_a3_a_aoutput.bus_hold = "false";
+defparam ji_a3_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire in1_a0_a_ainput_I_routing_wire_inst (
+	.datain(in1[0]),
+	.dataout(in1_a0_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y6_N22
+cycloneive_io_ibuf in1_a0_a_ainput(
+	.i(in1_a0_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(in1_a0_a_ainput_o));
+// synopsys translate_off
+defparam in1_a0_a_ainput.bus_hold = "false";
+defparam in1_a0_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire in2_a0_a_ainput_I_routing_wire_inst (
+	.datain(in2[0]),
+	.dataout(in2_a0_a_ainput_I_driver));
+
+// Location: IOIBUF_X1_Y0_N8
+cycloneive_io_ibuf in2_a0_a_ainput(
+	.i(in2_a0_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(in2_a0_a_ainput_o));
+// synopsys translate_off
+defparam in2_a0_a_ainput.bus_hold = "false";
+defparam in2_a0_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a0_a_a0_DATAB_routing_wire_inst (
+	.datain(in1_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a0_a_a0_DATAB_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a0_a_a0_DATAD_routing_wire_inst (
+	.datain(in2_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a0_a_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y6_N0
+cycloneive_lcell_comb Mult0_amult_core_aresult_a0_a_a0(
+// Equation(s):
+// Mult0_amult_core_aresult_a0_a_a0_combout = (in1_a0_a_ainput_o & in2_a0_a_ainput_o)
+
+	.dataa(gnd),
+	.datab(Mult0_amult_core_aresult_a0_a_a0_DATAB_driver),
+	.datac(gnd),
+	.datad(Mult0_amult_core_aresult_a0_a_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Mult0_amult_core_aresult_a0_a_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Mult0_amult_core_aresult_a0_a_a0.lut_mask = 16'hCC00;
+defparam Mult0_amult_core_aresult_a0_a_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire in1_a1_a_ainput_I_routing_wire_inst (
+	.datain(in1[1]),
+	.dataout(in1_a1_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y8_N8
+cycloneive_io_ibuf in1_a1_a_ainput(
+	.i(in1_a1_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(in1_a1_a_ainput_o));
+// synopsys translate_off
+defparam in1_a1_a_ainput.bus_hold = "false";
+defparam in1_a1_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire in2_a1_a_ainput_I_routing_wire_inst (
+	.datain(in2[1]),
+	.dataout(in2_a1_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y7_N15
+cycloneive_io_ibuf in2_a1_a_ainput(
+	.i(in2_a1_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(in2_a1_a_ainput_o));
+// synopsys translate_off
+defparam in2_a1_a_ainput.bus_hold = "false";
+defparam in2_a1_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a1_a_a1_DATAA_routing_wire_inst (
+	.datain(in1_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a1_a_a1_DATAA_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a1_a_a1_DATAB_routing_wire_inst (
+	.datain(in1_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a1_a_a1_DATAB_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a1_a_a1_DATAC_routing_wire_inst (
+	.datain(in2_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a1_a_a1_DATAC_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a1_a_a1_DATAD_routing_wire_inst (
+	.datain(in2_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a1_a_a1_DATAD_driver));
+
+// Location: LCCOMB_X1_Y6_N2
+cycloneive_lcell_comb Mult0_amult_core_aresult_a1_a_a1(
+// Equation(s):
+// Mult0_amult_core_aresult_a1_a_a1_combout = (in1_a1_a_ainput_o & (in2_a0_a_ainput_o $ (((in1_a0_a_ainput_o & in2_a1_a_ainput_o))))) # (!in1_a1_a_ainput_o & (in1_a0_a_ainput_o & (in2_a1_a_ainput_o)))
+
+	.dataa(Mult0_amult_core_aresult_a1_a_a1_DATAA_driver),
+	.datab(Mult0_amult_core_aresult_a1_a_a1_DATAB_driver),
+	.datac(Mult0_amult_core_aresult_a1_a_a1_DATAC_driver),
+	.datad(Mult0_amult_core_aresult_a1_a_a1_DATAD_driver),
+	.cin(gnd),
+	.combout(Mult0_amult_core_aresult_a1_a_a1_combout),
+	.cout());
+// synopsys translate_off
+defparam Mult0_amult_core_aresult_a1_a_a1.lut_mask = 16'h6AC0;
+defparam Mult0_amult_core_aresult_a1_a_a1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a2_a_a2_DATAA_routing_wire_inst (
+	.datain(in1_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a2_a_a2_DATAA_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a2_a_a2_DATAB_routing_wire_inst (
+	.datain(in1_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a2_a_a2_DATAB_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a2_a_a2_DATAC_routing_wire_inst (
+	.datain(in2_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a2_a_a2_DATAC_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a2_a_a2_DATAD_routing_wire_inst (
+	.datain(in2_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a2_a_a2_DATAD_driver));
+
+// Location: LCCOMB_X1_Y6_N12
+cycloneive_lcell_comb Mult0_amult_core_aresult_a2_a_a2(
+// Equation(s):
+// Mult0_amult_core_aresult_a2_a_a2_combout = (in1_a1_a_ainput_o & (in2_a1_a_ainput_o & ((!in2_a0_a_ainput_o) # (!in1_a0_a_ainput_o))))
+
+	.dataa(Mult0_amult_core_aresult_a2_a_a2_DATAA_driver),
+	.datab(Mult0_amult_core_aresult_a2_a_a2_DATAB_driver),
+	.datac(Mult0_amult_core_aresult_a2_a_a2_DATAC_driver),
+	.datad(Mult0_amult_core_aresult_a2_a_a2_DATAD_driver),
+	.cin(gnd),
+	.combout(Mult0_amult_core_aresult_a2_a_a2_combout),
+	.cout());
+// synopsys translate_off
+defparam Mult0_amult_core_aresult_a2_a_a2.lut_mask = 16'h20A0;
+defparam Mult0_amult_core_aresult_a2_a_a2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a3_a_a3_DATAA_routing_wire_inst (
+	.datain(in1_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a3_a_a3_DATAA_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a3_a_a3_DATAB_routing_wire_inst (
+	.datain(in1_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a3_a_a3_DATAB_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a3_a_a3_DATAC_routing_wire_inst (
+	.datain(in2_a1_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a3_a_a3_DATAC_driver));
+
+cycloneive_routing_wire Mult0_amult_core_aresult_a3_a_a3_DATAD_routing_wire_inst (
+	.datain(in2_a0_a_ainput_o),
+	.dataout(Mult0_amult_core_aresult_a3_a_a3_DATAD_driver));
+
+// Location: LCCOMB_X1_Y6_N14
+cycloneive_lcell_comb Mult0_amult_core_aresult_a3_a_a3(
+// Equation(s):
+// Mult0_amult_core_aresult_a3_a_a3_combout = (in1_a1_a_ainput_o & (in1_a0_a_ainput_o & (in2_a1_a_ainput_o & in2_a0_a_ainput_o)))
+
+	.dataa(Mult0_amult_core_aresult_a3_a_a3_DATAA_driver),
+	.datab(Mult0_amult_core_aresult_a3_a_a3_DATAB_driver),
+	.datac(Mult0_amult_core_aresult_a3_a_a3_DATAC_driver),
+	.datad(Mult0_amult_core_aresult_a3_a_a3_DATAD_driver),
+	.cin(gnd),
+	.combout(Mult0_amult_core_aresult_a3_a_a3_combout),
+	.cout());
+// synopsys translate_off
+defparam Mult0_amult_core_aresult_a3_a_a3.lut_mask = 16'h8000;
+defparam Mult0_amult_core_aresult_a3_a_a3.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign ji[0] = ji_a0_a_aoutput_o;
+
+assign ji[1] = ji_a1_a_aoutput_o;
+
+assign ji[2] = ji_a2_a_aoutput_o;
+
+assign ji[3] = ji_a3_a_aoutput_o;
+
+endmodule
